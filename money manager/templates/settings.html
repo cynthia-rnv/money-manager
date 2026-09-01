@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<body>
+
+<h2>{{transactions["settings"]}}</h2>
+<form method="POST">
+<label for="language">{{transactions["language"]}} : </label>
+<select name="language" id="language">
+<option value="en">{{transactions["english"]}}</option>
+<option value="fr">{{transactions["french"]}}</option>
+</select>
+
+<p></p>
+
+<label for="currency">{{transactions["currency"]}} : </label>
+<select name="currency" id="currency">
+<option value="USD">US Dollar</option>
+<option value="EUR">Euro</option>
+<option value="MGA">Ariary</option>
+<option value="JPY">Yen</option>
+</select>
+
+<p></p>
+
+<label for="amountformat">{{transactions["amount_format"]}} : </label>
+<select name="amountformat" id="amountformat">
+<option value="space_comma">Space comma : 1 000,50</option>
+<option value="comma_dot">Comma dot : 1,000.50</option>
+<option value="dot_comma">Dot comma : 1.000,50</option>
+
+</select>
+<p></p>
+<div class="about-section">
+<button type="button" onclick="toggleAbout()">
+{{transactions["about"]}}
+</button>
+<div id="aboutContent" class="about-content">
+<p>Money Manager</p>
+<p>Version 1.0.0</p>
+<p>{{transactions["text"]}}</p>
+<p>{{transactions["text2"]}}</p>
+<p>Cynthia Rnv</p>
+<p>© 2026</p>
+</div>
+</div>
+
+
+<p></p>
+<button type="submit">{{transactions["save"]}}</button>
+</form>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+
+
+
+
+
+

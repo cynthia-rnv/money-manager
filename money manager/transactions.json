@@ -1,0 +1,139 @@
+{
+    "Income": [
+        {
+            "Type": "income",
+            "Category": "Part-time job & Side hustle play",
+            "Amount": "1500",
+            "Date": "03/08/2026",
+            "Note": "job"
+        },
+        {
+            "Type": "income",
+            "Category": "One time inflows",
+            "Amount": "1000",
+            "Date": "04/08/2026",
+            "Note": "book sold"
+        },
+        {
+            "Type": "income",
+            "Category": "Family support",
+            "Amount": "500",
+            "Date": "04/08/2026",
+            "Note": "birthday gift from grandpa"
+        },
+        {
+            "Type": "income",
+            "Category": "Financial aid & Scholarship",
+            "Amount": "20000",
+            "Date": "04/08/2026",
+            "Note": "DSU"
+        },
+        {
+            "Type": "income",
+            "Category": "Family support",
+            "Amount": "500",
+            "Date": "06/08/2026",
+            "Note": "mamy"
+        },
+        {
+            "Type": "income",
+            "Category": "Financial aid & Scholarship",
+            "Amount": "150",
+            "Date": "07/08/2026",
+            "Note": "papy"
+        },
+        {
+            "Type": "income",
+            "Category": "One time inflows",
+            "Amount": "50",
+            "Date": "07/08/2026",
+            "Note": "tutoriat for Amelie"
+        },
+        {
+            "Type": "income",
+            "Category": "Family support",
+            "Amount": "800",
+            "Date": "08/08/2026",
+            "Note": "gift from nany"
+        },
+        {
+            "Type": "income",
+            "Category": "Financial aid & Scholarship",
+            "Amount": "1500",
+            "Date": "08/08/2026",
+            "Note": "financial aid from uni"
+        },
+        {
+            "Type": "income",
+            "Category": "One time inflows",
+            "Amount": "1000",
+            "Date": "14/08/2026",
+            "Note": "book"
+        },
+        {
+            "Type": "income",
+            "Category": "Family support",
+            "Amount": "500",
+            "Date": "26/08/2026",
+            "Note": "sis"
+        }
+    ],
+    "Expense": [
+        {
+            "Type": "expense",
+            "Category": "Groceries & Meal plan",
+            "Amount": "2000",
+            "Date": "04/08/2026",
+            "Note": "party"
+        },
+        {
+            "Type": "expense",
+            "Category": "Groceries & Meal plan",
+            "Amount": "500",
+            "Date": "04/08/2026",
+            "Note": "nothing"
+        },
+        {
+            "Type": "expense",
+            "Category": "Tuitition & Campus fees",
+            "Amount": "15000",
+            "Date": "04/08/2026",
+            "Note": "tuitition "
+        },
+        {
+            "Type": "expense",
+            "Category": "Subscriptions",
+            "Amount": "20",
+            "Date": "04/08/2026",
+            "Note": "netflix"
+        },
+        {
+            "Type": "expense",
+            "Category": "Course Material",
+            "Amount": "55",
+            "Date": "06/08/2026",
+            "Note": "book"
+        },
+        {
+            "Type": "expense",
+            "Category": "Rent & Dorm fees",
+            "Amount": "1000",
+            "Date": "07/08/2026",
+            "Note": "rent"
+        },
+        {
+            "Type": "expense",
+            "Category": "Personal Care",
+            "Amount": "250",
+            "Date": "07/08/2026",
+            "Note": "clothes and hair"
+        },
+        {
+            "Type": "expense",
+            "Category": "Rent & Dorm fees",
+            "Amount": "175",
+            "Date": "08/08/2026",
+            "Note": "rent"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+body{ background:#f5f7fb; font-family:Arial, sans-serif; padding: 0; margin: 0 auto;}
+.container{ width: 90%; max-width: 2250px; margin: auto;}
+.left {width: 85%;}
+.right{width: 15%;}
+
+.cards{display:flex; gap: 25px;  aligh-items: center; text-align: center; }
+
+.income h3 {color: green; font-size: 20px;} 
+.expense h3 {color: red; font-size: 20px;} 
+.balance h3 {color: blue; font-size: 20px;} 
+ 
+.income{background-color: #e8f5e9; border: 5px solid #a5d6a7;width: 275px; margin: 20px;border-radius: 15px; height: 115px;}
+.expense{background-color: #ffebee; border: 5px solid #ef9a9a;width: 275px; margin: 20px;border-radius: 15px; height: 115px;}
+.balance{background-color: #e3f2fd; border: 5px solid #90caf9;width: 275px; margin: 20px;border-radius: 15px; height: 115px;}
+
+
+.hero{height: 250px; display: flex; justify-content: center; aligh-items: center; text-align: center; background-color: lightblue; padding: 50px; min-height: 300px;}
+.hero-content i {font-size: 60px;}
+.hero h1{font-size: 50px;}
+.hero p{font-size: 20px;}
+.icons{display: flex; gap: 30px; justify-content: center;}
+
+nav {display: flex; flex-direction: colum; gap: 25px;}
+.navbar{display: flex; aligh-items: center; justify-content: center; background-color: gray; border-radius: 25px; gap: 25px;  padding: 15px;}
+.nav-links{display: flex; gap: 25px; }
+.nav-links a{ text-decoration: none; gap: 30px}
+.nav-links a: hover{opacity: 0.5;}
+
+.bouton_income{ padding: 10px; display: flex; aligh-items: center; text-align: center; border-radius: 15px; cursor: pointer; }
+.bouton_expense{ padding: 10px; display: flex; aligh-items: center; text-align: center; border-radius: 15px; cursor: pointer;}
+.bouton_income a{ text-align: center; cursor: pointer;}
+.bouton_expense a{ text-align: center; cursor: pointer;}
+button{border-radius: 10px; border: 3px; height: 35px; width: 110px;border: 2px solid #ddd; cursor: pointer;}
+
+.tableau {display: flex; gap: 30px;}
+
+.gauche {width: 50%; }
+
+.droite {width: 50%; }
+
+a{ text-decoration: none; color:  black;}
+
+.quick-action{border: 2px solid #ddd; text-align: center; border-radius: 12px; padding: 20px;justify-content: center; aligh-items: center; width: 200px; height: 175px;}
+
+.income-table, .expense-table {border-radius: 20px; flex: 1; width: 100%; border: 2px solid #ddd; overflow: hidden;}
+
+.income-table th {background: #2e7d32 ; color: white; height: 40px}
+
+.income-table td {background: #b7ddb9; text-align: center;}
+
+.expense-table th {background: #c62828; color: white; height: 40px;}
+
+.expense-table td {background: #f5b7b7; text-align: center;}
+
+.income-title{color: #2e7d32;}
+
+.expense-title{color: #d32f2f;}
+
+table{width: 100%; padding: 15px; height: 350px; border-radius: 15px; border-collapse: collapse;}
+
+h3{font-family: Time; color: black;} 
+
+.about-content{display: none; }
+
+.about-content.show{display: block;}
+
+.cadre{display: flex; padding: 20px;}
+
+.andrefana{width: 50%}
+
+.antsinanana{width: 50%}
+
+

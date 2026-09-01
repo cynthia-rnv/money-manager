@@ -1,0 +1,26 @@
+<h2>Transaction details</h2>
+<body>
+<form action="/add" method="POST">
+<p>Please, complete the informations below.</p>
+<p>Type : </p>
+<input type="radio" name="transaction" value="income" checked/>Income
+
+<p>Category :</p>
+<select name="category" >
+<option value='Family support'>Family support</option>
+<option value= 'Part-time job & Side hustle play'>Part-time job & Side hustle play</option>
+<option value= 'Financial aid & Scholarship'>Financial aid & Scholarship</option>
+<option value= 'One time inflows'>One time inflows</option>
+</select>
+
+<p>Amount :</p>
+<input type="number" name="amount" step="0.01" required>
+
+<p>Note :</p>
+<input type="text" name="note">
+
+<p></p>
+<button type="submit">Save</button>
+
+</form>
+</body>

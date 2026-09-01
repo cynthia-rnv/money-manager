@@ -1,0 +1,6 @@
+{
+"USD":{"symbol":"$", "name": "US Dollar"},
+"EUR":{"symbol":"€", "name": "Euro"},
+"MGA":{"symbol":"Ar", "name": "Ariary"},
+"JPY":{"symbol":"¥", "name": "Yen"}
+}

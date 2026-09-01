@@ -1,0 +1,35 @@
+<h2>Transaction details</h2>
+<body>
+<form action="/add" method="POST">
+<p>Please, complete the informations below.</p>
+<p>Type : </p>
+<input type="radio" name="transaction" value="expense" checked/>Expense
+
+
+<p>Category :</p>
+
+<select name="category" >
+<option value='Rent & Dorm fees'>Rent & Dorm fees</option>
+<option value= 'Tuitition & Campus fees'>Tuitition & Campus fees</option>
+<option value= 'Groceries & Meal plan'>Groceries & Meal plan</option>
+<option value= 'Commuting & Transportation'>Commuting & Transportation</option>
+<option value= 'Course Material'>Course Material</option>
+<option value= 'Social & Entraitement'>Social & Entraitement</option>
+<option value= 'Food & Snacks & coffee runs'>Food & Snacks & coffee runs</option>
+<option value= 'Subscriptions'>Subscriptions</option>
+<option value= 'Personal Care'>Personal Care</option>
+</select>
+
+<p>Amount :</p>
+<input type="number" name="amount" step="0.01" required>
+
+<p>Note :</p>
+<input type="text" name="note">
+
+<p></p>
+<button type="submit">Save</button>
+
+
+
+</form>
+</body>

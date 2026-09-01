@@ -1,0 +1,55 @@
+<h2>{{transactions["text3"]}}</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='fontawesome.10/css/all.min.css') }}">
+
+<div class="tableau">
+<div class="gauche">
+<h3 class="income-title">
+<i class=" fa-solid fa-arrow-trend-up"></i>
+{{transactions["all_income"]}}
+</h3>
+<table class="income-table">
+<tr>
+<th scope='col'>Type</th>
+<th scope='col'>{{transactions["category"]}}</th>
+<th scope='col'>{{transactions["amount"]}}</th>
+<th scope='col'>Date</th>
+<th scope='col'>Note</th>
+</tr>
+{% for t in income %}
+<tr>
+<td><i class="fa-solid fa-arrow-up" color="green"></i>{{ t["Type"] }}</td>
+<td>{{ t["Category"] }}</td>
+<td>{{ t["Amount"] }}</td>
+<td>{{ t["Date"] }}</td>
+<td>{{ t["Note"] }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
+<div class="droite">
+<h3 class="expense-title">
+<i class="fa-solid fa-arrow-trend-down"></i>
+{{transactions["all_expense"]}}
+</h3>
+<table class="expense-table">
+<tr>
+<th scope='col'>Type</th>
+<th scope='col'>{{transactions["category"]}}</th>
+<th scope='col'>{{transactions["amount"]}}</th>
+<th scope='col'>Date</th>
+<th scope='col'>Note</th>
+</tr>
+{% for t in expense %}
+<tr>
+<td><i class="fa-solid fa-arrow-down" color="red"></i>{{ t["Type"] }}</td>
+<td>{{ t["Category"] }}</td>
+<td>{{ t["Amount"] }}</td>
+<td>{{ t["Date"] }}</td>
+<td>{{ t["Note"] }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+</div>

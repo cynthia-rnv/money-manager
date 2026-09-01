@@ -1,0 +1,67 @@
+<h2>Transaction details</h2>
+<body>
+<form action="/add" method="POST">
+<p>Please, complete the informations below.</p>
+<p>Type : </p>
+<input type="radio" name="transaction" value="income" onclick="updateCategories('1')" checked/>Income
+<input type="radio" name="transaction" value="expense"onclick="updateCategories('2')"/>Expense
+
+
+<p>Category :</p>
+<select name="category" id="list_income">
+<option value='Family support'>Family support</option>
+<option value= 'Part-time job & Side hustle play'>Part-time job & Side hustle play</option>
+<option value= 'Financial aid & Scholarship'>Financial aid & Scholarship</option>
+<option value= 'One time inflows'>One time inflows</option>
+</select>
+<select name="category" id="list_expense" style="display: none;">
+<option value='Rent & Dorm fees'>Rent & Dorm fees</option>
+<option value= 'Tuitition & Campus fees'>Tuitition & Campus fees</option>
+<option value= 'Groceries & Meal plan'>Groceries & Meal plan</option>
+<option value= 'Commuting & Transportation'>Commuting & Transportation</option>
+<option value= 'Course Material'>Course Material</option>
+<option value= 'Social & Entraitement'>Social & Entraitement</option>
+<option value= 'Food & Snacks & coffee runs'>Food & Snacks & coffee runs</option>
+<option value= 'Subscriptions'>Subscriptions</option>
+<option value= 'Personal Care'>Personal Care</option>
+</select>
+
+<p>Amount :</p>
+<input type="number" name="amount" step="0.01" required>
+
+<p>Note :</p>
+<input type="text" name="note">
+
+<p></p>
+<button type="submit">Save</button>
+
+<script>
+function updateCategories(type) {
+const listIncome=document.getElementById('list_income');
+const listExpense=document.getElementById('list_expense');
+if (type=='1'){
+listIncome.style.display='block';
+listExpense.style.display='none';
+listExpense.name ='';
+listIncome.name='category';
+}else if (type=='2'){
+listExpense.style.display='block';
+listIncome.style.display='none';
+listExpense.name ='category';
+listIncome.name='';
+}
+}
+
+</script>
+
+</form>
+</body>
+
+
+
+
+
+
+
+
+

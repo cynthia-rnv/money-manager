@@ -1,0 +1,19 @@
+<div class="container">
+<h1>{{transactions["statistics"]}}</h1>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<p></p>
+
+<div class="cadre">
+<div class="andrefana">
+<h2>Income vs Expense</h2>
+<img src="{{ url_for('static', filename='income_expense.png')}}"
+     alt="Income vs Expense">
+</div>
+<div class="atsinanana"> 
+<h2>Expense by Category</h2>
+
+<img src="{{ url_for('static', filename='expense_chart.png')}}"
+     alt="Expense by category">
+</div>
+</div>

@@ -1,0 +1,147 @@
+<!--this is the html structure for my personal money manager-->
+<!DOCTYPE html>
+
+<head>
+<title>Money manager 1.0</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='fontawesome.10/css/all.min.css') }}">
+</head>
+
+<section class="hero" >
+<div class="hero-content">
+<i class="fa-solid fa-wallet"></i>
+<h1>Money Manager</h1>
+<p>{{transactions["title"]}}</p>
+<div class="icons">
+<i class="fa-solid fa-coins"></i>
+<i class="fa-solid fa-chart-line"></i>
+<i class="fa-solid fa-credit-card"></i>
+</div>
+</div>
+</section>
+
+<nav class="navbar">
+<div class="logo">
+<i class="fa-solid fa-dashboard"></i>
+</div>
+<div class="nav-link" >
+<a href="/">
+<i class="fa-solid fa-house"></i>
+{{transactions["home"]}}
+</a>
+<a href="/historic">
+<i class="fa-solid fa-money-bill-transfer"></i>
+{{transactions["historic"]}}
+</a>
+<a href="/stat">
+<i class="fa-solid fa-chart-pie"></i>
+{{transactions["statistics"]}}
+</a>
+<a href="/settings">
+<i class="fa-solid fa-gear"></i>
+{{transactions["settings"]}}
+</a>
+</div>
+</nav>
+
+<div class="container">
+<body>
+<h2>{{transactions["titre2"]}}</h2>
+
+
+<div class="left">
+<div class="cards">
+
+<div class="income">
+<i class="fa-solid fa-arrow-trend-up"></i>
+<h3>{{transactions["income"]}}</h3>
+<h2>{{currency["symbol"]}}
+{{income}}</h2>
+</div>
+
+<div class="expense">
+<i class="fa-solid fa-arrow-trend-down"></i>
+<h3>{{transactions["expense"]}}</h3>
+<h2>{{currency["symbol"]}}
+{{expense}}</h2>
+</div>
+
+<div class="balance">
+<i class="fa-solid fa-wallet"></i>
+<h3>{{transactions["balance"]}}</h3>
+<h2>{{currency["symbol"]}}
+{{sold}}</h2>
+</div>
+
+
+
+<div class="right">
+<div class="quick-action">
+<h2>{{transactions["quick_action"]}}</h2>
+<div  class="bouton_income">
+<a href="/newincome"><button>{{transactions["new_income"]}}</button></a>
+</div>
+<div  class="bouton_expense">
+<a href="/newexpense"><button>{{transactions["new_expense"]}}</button></a>
+</div>
+</div>
+</div>
+</div>
+</di>
+
+<h2>{{transactions["recent_transactions"]}}</h2>
+
+
+<div class="tableau">
+<div class="gauche">
+<h3 class="income-title">
+<i class=" fa-solid fa-arrow-trend-up"></i>
+{{transactions["recent_income"]}}
+</h3>
+<table class="income-table">
+<tr>
+<th scope='col'>Type</th>
+<th scope='col'>{{transactions["category"]}}</th>
+<th scope='col'>{{transactions["amount"]}}</th>
+<th scope='col'>Date</th>
+<th scope='col'>Note</th>
+</tr>
+{% for t in recent_income %}
+<tr>
+<td><i class="fa-solid fa-arrow-up" color="green"></i>{{ t["Type"] }}</td>
+<td>{{ t["Category"] }}</td>
+<td>{{ t["Amount"] }}</td>
+<td>{{ t["Date"] }}</td>
+<td>{{ t["Note"] }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
+<div class="droite">
+<h3 class="expense-title">
+<i class="fa-solid fa-arrow-trend-down"></i>
+{{transactions["recent_expense"]}}
+</h3>
+<table class="expense-table">
+<tr>
+<th scope='col'>Type</th>
+<th scope='col'>{{transactions["category"]}}</th>
+<th scope='col'>{{transactions["amount"]}}</th>
+<th scope='col'>Date</th>
+<th scope='col'>Note</th>
+</tr>
+{% for t in recent_expense %}
+<tr>
+<td><i class="fa-solid fa-arrow-down" color="red"></i>{{ t["Type"] }}</td>
+<td>{{ t["Category"] }}</td>
+<td>{{ t["Amount"] }}</td>
+<td>{{ t["Date"] }}</td>
+<td>{{ t["Note"] }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+</div>
+</body>
+</div>
