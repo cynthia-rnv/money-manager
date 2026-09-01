@@ -1,20 +1,34 @@
 # Money Manager
-A simple personal finance manager built with **Python and Flask**.
+
+A simple personal finance web application built with **Python and Flask**.
 
 ## Features
-- Add income and expenses 
-- Track total income, expenses, and balance
-- View transaction history
-- Display spending statistics
-- English/French interface
 
-## Techologies
-- Python
-- Flask
-- HTML/CSS
-- JavaScript
-- Matplotlib
-- JSON
+- Track income and expenses
+- Calculate total income, expenses, and balance
+- View recent transactions
+- View complete transaction history
+- Visualize spending with charts
+- Add and manage transactions
+- English and French interface
 
-## About
-This project was created as a personal learning project to practice **Python, Flask, web development, and data visualisation**. 
+## Technologies
+
+- **Python**
+- **Flask**
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Matplotlib**
+- **JSON**
+
+## Project Structure
+
+```text
+money-manager/
+│
+├── app.py
+├── templates/
+├── static/
+├── translations/
+└── README.md
