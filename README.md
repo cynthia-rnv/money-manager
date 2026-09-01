@@ -1,6 +1,6 @@
 # Money Manager
 
-A simple personal finance web application built with **Python and Flask**.
+A personal finance web application built with **Python and Flask**.
 
 ## Features
 
